@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
@@ -51,15 +51,22 @@ int updatedVal;
                   updatedVal = positons_finding(itemPositionsListener.itemPositions);
                   print(updatedVal);
                return Column(
-                  children: [
+                  children: [(index%2==0)?
                      Container(
-                       height:1080,
+                       height:500,
                        width:455,
                        child: Card(
                          color:Colors.green,
                          child: Center(child: Text("Harish" +index.toString(),textAlign: TextAlign.center,)),
                        ),
-                     )
+                     ): Container(
+                    height:500,
+                    width:455,
+                    child: Card(
+                      color:Colors.pink,
+                      child: Center(child: Text("vamsee " +index.toString(),textAlign: TextAlign.center,)),
+                    ),
+                  )
                   ],
                );
             }),
