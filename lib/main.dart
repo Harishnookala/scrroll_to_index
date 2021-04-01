@@ -27,7 +27,7 @@ class _SecondScreenState extends State<SecondScreen> {
 int updatedVal;
 @override
 
-
+int x=10;
 
   var index_value;
   var value;
