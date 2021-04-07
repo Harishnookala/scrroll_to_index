@@ -27,10 +27,12 @@ class _SecondScreenState extends State<SecondScreen> {
 int updatedVal;
 @override
 
+int x=10;int  y=50;
 
 
   var index_value;
   var value;
+
   @override
   Widget build(BuildContext context) {
     var fer;
